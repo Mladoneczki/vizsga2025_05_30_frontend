@@ -6,7 +6,7 @@ function SzoTabla() {
     const {szoLista}=useContext(ApiContext)
 
   return (
-    <>{szoLista.map((szo, i)=>{return <td><tr> <SzoSor szo={szo} key={i}/></tr></td>})}</>
+    <>{szoLista.map((szo, i)=>{return  <SzoSor szo={szo} key={i}/>})}</>
             
        
   )
