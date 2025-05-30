@@ -6,19 +6,20 @@ function SzoSor(props) {
     function valtozas(e) {
        
     }
+    
 
 
 
     return (
        <div className='sorok'>
-        <div>{props.szo.angol}</div>
+        <div><strong>{props.szo.angol}</strong></div>
             <div>
             <form action="">
                
                 <input type="text" id="magyar" name=""/></form>
             </div>
             <div>
-                pipa
+            ✅
             </div>
             </div>
 

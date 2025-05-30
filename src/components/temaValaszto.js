@@ -12,7 +12,7 @@ function TemaValaszto() {
 
     return (
         <div>
-            <label htmlFor="tema">Choose a téma:</label>
+            <label htmlFor="tema">Válassz Témát: </label>
 
             <select id="tema">
                 {temaLista.map((tema, i) => { return <option key={i} value={tema.temanev}>{tema.temanev}</option> })}

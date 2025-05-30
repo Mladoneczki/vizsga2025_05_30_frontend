@@ -3,13 +3,18 @@ import { ApiContext } from '../context/ApiContext'
 import SzoSor from './SzoSor'
 
 function SzoTabla() {
-    const {szoLista}=useContext(ApiContext)
+    const { szoLista } = useContext(ApiContext)
 
-  return (
-    <>{szoLista.map((szo, i)=>{return  <SzoSor szo={szo} key={i}/>})}</>
-            
-       
-  )
+    return (<>
+        <div className='sorok'>
+            <div><strong>Angol</strong></div>
+            <div><strong>Magyar</strong></div>
+            <div><strong>eredmény</strong></div>
+        </div>
+        <>{szoLista.map((szo, i) => { return <SzoSor szo={szo} key={i} /> })}</>
+
+    </>
+    )
 }
 
 export default SzoTabla
