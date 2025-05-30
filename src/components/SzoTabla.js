@@ -6,7 +6,7 @@ function SzoTabla() {
     const { szoLista } = useContext(ApiContext)
 
     return (<>
-        <div className='sorok'>
+        <div className='sorok' id='fejlec'>
             <div><strong>Angol</strong></div>
             <div><strong>Magyar</strong></div>
             <div><strong>eredmény</strong></div>
